@@ -6,7 +6,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@
 import { Badge } from '@/components/ui/badge'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { USER_ROLES } from '@/lib/constants'
-import { toast } from '@/components/ui/use-toast'
+//import { toast } from '@/components/ui/use-toast'
 import { Loader2 } from 'lucide-react'
 
 interface UsersTableProps {
