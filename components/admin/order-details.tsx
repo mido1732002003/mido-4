@@ -7,7 +7,7 @@ import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { formatPrice } from '@/lib/utils'
-import { toast } from '@/components/ui/use-toast'
+//import { toast } from '@/components/ui/use-toast'
 import { Mail, Download, Loader2 } from 'lucide-react'
 
 interface OrderDetailsProps {
