@@ -1,0 +1,158 @@
+digital-marketplace/
+├── app/
+│   ├── (auth)/
+│   │   ├── auth/
+│   │   │   └── signin/
+│   │   │       └── page.tsx
+│   │   └── layout.tsx
+│   ├── (shop)/
+│   │   ├── cart/
+│   │   │   └── page.tsx
+│   │   ├── checkout/
+│   │   │   └── page.tsx
+│   │   ├── products/
+│   │   │   ├── [slug]/
+│   │   │   │   └── page.tsx
+│   │   │   └── page.tsx
+│   │   ├── success/
+│   │   │   └── page.tsx
+│   │   ├── cancel/
+│   │   │   └── page.tsx
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   ├── account/
+│   │   ├── orders/
+│   │   │   └── page.tsx
+│   │   └── layout.tsx
+│   ├── admin/
+│   │   ├── orders/
+│   │   │   ├── [id]/
+│   │   │   │   └── page.tsx
+│   │   │   └── page.tsx
+│   │   ├── products/
+│   │   │   ├── [id]/
+│   │   │   │   └── edit/
+│   │   │   │       └── page.tsx
+│   │   │   ├── new/
+│   │   │   │   └── page.tsx
+│   │   │   └── page.tsx
+│   │   ├── users/
+│   │   │   └── page.tsx
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   ├── api/
+│   │   ├── admin/
+│   │   │   └── upload/
+│   │   │       └── route.ts
+│   │   ├── auth/
+│   │   │   └── [...nextauth]/
+│   │   │       └── route.ts
+│   │   ├── cart/
+│   │   │   └── route.ts
+│   │   ├── checkout/
+│   │   │   └── route.ts
+│   │   ├── download/
+│   │   │   └── [orderId]/
+│   │   │       └── [productId]/
+│   │   │           └── route.ts
+│   │   ├── orders/
+│   │   │   ├── [id]/
+│   │   │   │   └── route.ts
+│   │   │   └── route.ts
+│   │   ├── products/
+│   │   │   ├── [id]/
+│   │   │   │   └── route.ts
+│   │   │   └── route.ts
+│   │   ├── search/
+│   │   │   └── route.ts
+│   │   ├── stripe/
+│   │   │   └── webhook/
+│   │   │       └── route.ts
+│   │   └── users/
+│   │       ├── [id]/
+│   │       │   └── route.ts
+│   │       └── route.ts
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── providers.tsx
+├── components/
+│   ├── admin/
+│   │   ├── dashboard-stats.tsx
+│   │   ├── order-details.tsx
+│   │   ├── orders-table.tsx
+│   │   ├── product-form.tsx
+│   │   ├── products-table.tsx
+│   │   └── users-table.tsx
+│   ├── cart/
+│   │   ├── add-to-cart-button.tsx
+│   │   ├── cart-drawer.tsx
+│   │   ├── cart-item.tsx
+│   │   └── cart-summary.tsx
+│   ├── checkout/
+│   │   ├── checkout-button.tsx
+│   │   └── order-summary.tsx
+│   ├── layout/
+│   │   ├── footer.tsx
+│   │   ├── header.tsx
+│   │   ├── mobile-nav.tsx
+│   │   └── theme-toggle.tsx
+│   ├── products/
+│   │   ├── product-card.tsx
+│   │   ├── product-filters.tsx
+│   │   ├── product-grid.tsx
+│   │   ├── product-search.tsx
+│   │   └── product-sort.tsx
+│   ├── ui/
+│   │   └── [shadcn components]
+│   └── auth-button.tsx
+├── lib/
+│   ├── auth/
+│   │   ├── options.ts
+│   │   └── utils.ts
+│   ├── db/
+│   │   ├── models/
+│   │   │   ├── category.ts
+│   │   │   ├── order.ts
+│   │   │   ├── product.ts
+│   │   │   └── user.ts
+│   │   └── mongodb.ts
+│   ├── email/
+│   │   ├── templates/
+│   │   │   ├── magic-link.tsx
+│   │   │   └── order-confirmation.tsx
+│   │   └── send.ts
+│   ├── payments/
+│   │   └── stripe.ts
+│   ├── storage/
+│   │   └── cloudinary.ts
+│   ├── validation/
+│   │   ├── auth.ts
+│   │   ├── cart.ts
+│   │   ├── order.ts
+│   │   ├── product.ts
+│   │   └── user.ts
+│   ├── constants.ts
+│   ├── hooks.ts
+│   └── utils.ts
+├── middleware.ts
+├── public/
+│   ├── images/
+│   │   └── logo.svg
+│   └── robots.txt
+├── scripts/
+│   └── seed.ts
+├── types/
+│   ├── index.ts
+│   └── next-auth.d.ts
+├── .env.example
+├── .eslintrc.js
+├── .gitignore
+├── .prettierrc
+├── components.json
+├── next-env.d.ts
+├── next.config.mjs
+├── package.json
+├── postcss.config.js
+├── README.md
+├── tailwind.config.ts
+└── tsconfig.json
